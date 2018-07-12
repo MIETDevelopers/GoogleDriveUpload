@@ -46,4 +46,4 @@ if (!empty($_POST)) {
     finfo_close($finfo);
     header('location:'.$url);exit;
 }
-include 'index.phtml';
+include 'index.php';
