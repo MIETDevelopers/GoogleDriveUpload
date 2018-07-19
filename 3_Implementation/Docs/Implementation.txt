@@ -1,6 +1,6 @@
 * To set up the code in your machine using xampp server only the following steps needed to be followed:
 - Download or clone the code from the repository.
-- Save the extracted zip file in the path C:/xampp/htdocs(if you are using xampp you can rename the folder to googledrive).
+- Save the extracted zip file in the path C:/xampp/htdocs(if you are using XAMPP you can rename the folder to googledrive).
 - Before using the code you need to start the xampp apache and mySQL server.
 - Now when you will run it by using URL as localhost/googledrive(in my case) 40X Error will be displayed. This is because we hadn't enabled any of our Google Drive API.
 
@@ -23,11 +23,11 @@
 - Run the code and you will be redirected to the page of your signing account asking to continue.
 - Allow for the access to the account you choose.
 
- * index.php code working and uploading files to google drive:
+ * index.php code working and uploading files to Google Drive:
  - After allowing access, a new page with the existing files in the 'files' folder will apear with a submit button.
  - 'Files' will be a folder available in your C://xxampp/htdocs/googledrive folder containig the files to be uploaded into the drive.
- - You can upload as many files as you can, of any extension to your googledrive provided the files should lie in the folder with path      defined as C:/xampp/htdocs/googledrive/files.
- - After clicking the submit button the files will be uploaded into the google drive account which you choose to have acceess.
+ - You can upload as many files as you can, of any extension to your GoogleDrive provided the files should lie in the folder with path      defined as C:/xampp/htdocs/googledrive/files.
+ - After clicking the submit button the files will be uploaded into the Google Drive account which you choose to have acceess.
 
 
 
