@@ -1,1 +1,34 @@
+* To set up the code in your machine using xampp server only the following steps needed to be followed:
+- Download or clone the code from the repository.
+- Save the extracted zip file in the path C:/xampp/htdocs(if you are using XAMPP you can rename the folder to googledrive).
+- Before using the code you need to start the xampp apache and mySQL server.
+- Now when you will run it by using URL as localhost/googledrive(in my case) 40X Error will be displayed. This is because we hadn't enabled any of our Google Drive API.
+
+* To enable Google Drive API follow the steps as:
+- Go to https://console.developers.google.com/apis.
+- Then on the page displayed click on the Enable API's and Services.
+- In the search bar type 'drive'and then choose Google Drive API.
+- If the API is enabled then it's good if not then enable it first.
+- Select 'Manage' and 'create project'. Then fill the required fields the API will be enabled.
+- Then click on 'credentials' available on the panel on the LHS.
+- Then on the drop down menu of 'create credentials' choose OAuth clientID.
+- Choose the 'Web Application' as application type and choose Name and fill in the restrictions field.
+- Authorized Javascript origins will contain 'https://localhost i.e the origin URI of the client application.
+- Next feild will contain the path of users application after authentication from google i.e http://localhost/googledrive/ (you enter your own foldername).
+- Click on create and a dialogue box will appear with the CLiendID and ClientSecret.
+
+* Setting up the upload code which grants the access to the particular account:
+- Copy ClientID first and paste it into your code in the place of $client->setClientId('Enter your clientid').
+- Than copy Client Secret and paste it into your code in the place of $client->setClientSecret('Enter your client secret').
+- Run the code and you will be redirected to the page of your signing account asking to continue.
+- Allow for the access to the account you choose.
+
+ * index.php code working and uploading files to Google Drive:
+ - After allowing access, a new page with the existing files in the 'files' folder will apear with a submit button.
+ - 'Files' will be a folder available in your C://xxampp/htdocs/googledrive folder containig the files to be uploaded into the drive.
+ - You can upload as many files as you can, of any extension to your GoogleDrive provided the files should lie in the folder with path      defined as C:/xampp/htdocs/googledrive/files.
+ - After clicking the submit button the files will be uploaded into the Google Drive account which you choose to have acceess.
+
+
+
 
